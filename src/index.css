@@ -1,0 +1,385 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.myShadow {
+  transition: box-shadow 0.2s linear;
+  box-shadow: 0px 0px 10px rgba(201, 201, 201, 0.3);
+}
+.datetimeinput
+{
+  transition: box-shadow 0.2s linear;
+border-radius: 7px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px rgba(201, 201, 201, 0.3);
+
+}
+
+
+.datetimeinput:focus
+{
+  transition: box-shadow 0.2s linear;
+border-radius: 7px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px rgba(201, 201, 201, 0.3);
+border: 2px solid  rgba(201, 201, 201, 0.3) !important;
+outline: none; /* Remove default outline */
+
+}
+
+.myShadow:hover {
+  box-shadow: 0px 0px 20px rgba(151, 151, 151, 0.3);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+th,td{
+
+  text-wrap: nowrap;
+}
+
+@layer components {
+  .wrapper {
+    @apply py-24
+  }
+
+  .set-padding {
+    @apply pt-6 pb-16
+  }
+
+  .isActive {
+    @apply text-blue font-medium
+  }
+
+  .xs-heading {
+    @apply tracking-wide text-md font-medium text-lightDark
+  }
+
+  .sm-heading {
+    @apply text-xl sm:text-2xl font-medium
+  }
+
+  .items-cent {
+    @apply flex items-center
+  }
+
+  .justify-bet {
+    @apply flex items-center justify-between
+  }
+
+  .justify-cent {
+    @apply !flex items-center justify-center
+  }
+
+  .form {
+    @apply w-full lg:w-2/4 px-8 pt-6 pb-16 rounded-md
+  }
+
+  .input {
+    @apply text-md pb-1 inline-block border-b focus:outline-none w-full text-lightDark tracking-wider
+  }
+
+  .error {
+    @apply text-red-600 text-sm
+  }
+
+  
+
+ 
+}
+
+
+
+table,select,option,td,tr,tbody,main,.calendar-container,.justify-cent,body,input,.ant-modal-title{
+
+  background-color: #001529 !important;
+  color: white !important;
+}
+
+.ant-modal-content ,.ant-modal-content *{
+  background-color: #001529 !important;
+  color: white !important;
+
+}
+
+h3,h5{
+  color: white !important;
+}
+
+
+.tableScroll::-webkit-scrollbar{
+    background:#001529;
+    height:10px;
+    
+}
+
+.tableScroll::-webkit-scrollbar-track{
+    background:#001529;
+    border-radius: 10px;
+    
+ 
+}
+.tableScroll::-webkit-scrollbar-thumb{
+    background:blueviolet;
+    border-radius: 10px;
+   
+}
+
+button{
+  background-color: blueviolet !important;
+  color: white !important;
+}
+
+.calendar-header button{
+  background-color: initial !important;
+
+
+}
+
+
+h1,p,.ant-progress-text{
+  color: white !important;
+
+}
+
+
+
+.ant-menu-item{
+  background-color: blueviolet !important ;
+
+}
+
+
+:where(.css-dev-only-do-not-override-j9bb5n).ant-progress .ant-progress-circle-trail {
+  stroke: gray;
+}
+
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-section, .right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.left-section {
+  background-color: #002140;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.right-section {
+  background-color: #001529; 
+}
+
+.center-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dashboard-button {
+  display: inline-block;
+  background-color:blueviolet; /* Ant Design blue color */
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.ant-btn-primary{
+  color: white !important;
+  background-color:blueviolet !important; 
+}
+
+.ant-btn-primary span{
+  color: white !important;
+  background-color:blueviolet !important; 
+}
+
+.dashboard-button:hover {
+  background-color: #40a9ff; /* Lighter shade of blue on hover */
+}
+
+.welcome{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.whitetext{
+  color: white !important;
+}
+
+.logo{
+  position: absolute;
+  top: 10%;
+  height: 170px;
+  width: 170px;
+}
+.logo1{
+
+  height: 170px;
+  width: 170px;
+}
+
+
+@media (max-width:500px)
+{
+  .dashboard-container{
+    flex-direction: column;
+  }
+
+  .logo{
+    position: initial;
+    
+  }
+}
+
+.form{
+  width: 49% !important;
+  margin-top: 10px !important;
+}
+
+@media (max-width:500px)
+{
+  .form{
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+}
+
+
+.invited-tasks-container {
+  background-color: #001529;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+
+  font-size: 16px ;
+}
+
+.loading, .error {
+  text-align: center;
+  color: white;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #001529;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task-title {
+  margin: 0;
+  color: #333;
+}
+
+.task-due-date, .task-status {
+  color: #666;
+}
+
+.no-tasks {
+  text-align: center;
+  color: white;
+}
+
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.accept-button, .reject-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.accept-button {
+  background-color: #4caf50 !important;
+
+}
+
+.reject-button {
+  background-color: #f44336 !important; 
+}
+
+
+/* NotesPage.css */
+
+.notes-page {
+  background-color: #001529;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note-item {
+  background-color: #1c2a45;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-content {
+  font-size: 1rem;
+}
+
+.note-date {
+  font-size: 0.8rem;
+  color: #a0a0a0;
+  margin-top: 5px;
+}
